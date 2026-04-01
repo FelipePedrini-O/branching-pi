@@ -2,6 +2,8 @@
 
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello " + args[0] + "!");
+        //Esse Hello World está em Inglês, espero que esse comentário não de muito problema!!
+        System.out.println("Hello " + args[0] + "!");//Ou esse
+        //Nem esse
     }
 }
