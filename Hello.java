@@ -2,6 +2,15 @@
 
 public class Hello {
     public static void main(String[] args) {
-        System.out.println("Hello " + args[0] + "!");
+        if(args.length < 2) return;
+
+        String lang = args[1];
+
+        if(lang == "pt-br") {
+            System.out.println("Olá" + args[0] + "!");
+        }
+        else {
+            System.out.println("Hello " + args[0] + "!");
+        }
     }
 }
