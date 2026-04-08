@@ -2,6 +2,7 @@ package br.ufes.buracobonicos;
 
 import java.io.FileReader;
 import java.io.Reader;
+import java.util.ArrayList;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
@@ -18,13 +19,22 @@ public class App
         .build()
         .parse(in);
 
+        ArrayList<CsvData> CsvList = new ArrayList<>();
+
         for (CSVRecord record : records_inp) {
-            String entity = record.get("Entity");
+            //String entity = record.get("Entity");
+            Integer year = Integer.parseInt(record.get("Year"));
+            if(year != 2020) continue;
+
             String code = record.get("Code");
-            String year = record.get("Year");
-            String men = record.get("Men");
-            String women = record.get("Women");
-            System.out.println(entity + code + year + men + women);
+            Double male = Double.parseDouble(record.get("Men"));
+            Double female = Double.parseDouble(record.get("Women"));
+
+            CsvList.add(new CsvData(code, year, male, female));
+        }
+
+        for(CsvData data : CsvList) {
+            System.err.println(data);
         }
 
         /* Iterable<CSVRecord> records = CSVFormat.RFC4180.parse(in);
