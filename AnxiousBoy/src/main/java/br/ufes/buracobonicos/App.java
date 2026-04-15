@@ -11,7 +11,7 @@ public class App
 {
     public static void main( String[] args ) throws Exception
     {
-        String path = "/home/fpoliveira/branching-pi/AnxiousBoy/female-and-male-life-expectancy-at-birth-in-years/female-and-male-life-expectancy-at-birth-in-years.csv"; 
+        String path = "/home-temp/aluno/branching-pi/AnxiousBoy/csv/file.csv"; 
         Reader in = new FileReader(path);
         Iterable<CSVRecord> records_inp = CSVFormat.RFC4180.builder()
         .setHeader()
@@ -34,7 +34,7 @@ public class App
         }
 
         for(CsvData data : CsvList) {
-            System.err.println(data);
+            data.print();
         }
 
         /* Iterable<CSVRecord> records = CSVFormat.RFC4180.parse(in);

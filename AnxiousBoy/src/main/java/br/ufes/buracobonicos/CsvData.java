@@ -13,6 +13,10 @@ public class CsvData {
         this.female = female;
     }
 
+    public void print() {
+        System.out.println(country + " " + year + " " + male + " " + female);
+    }
+
     public String getCountry() {
         return country;
     }
