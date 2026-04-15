@@ -3,6 +3,7 @@ package br.ufes.buracobonicos;
 import java.io.FileReader;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
@@ -32,6 +33,10 @@ public class App
 
             CsvList.add(new CsvData(code, year, male, female));
         }
+
+        Comparator<CsvData> femaleComparator = (d1, d2) -> Double.compare(d2.getFemale(), d1.getFemale());
+
+        CsvList.sort(femaleComparator);
 
         for(CsvData data : CsvList) {
             data.print();
