@@ -1,0 +1,45 @@
+{
+  "chart": {
+    "title": "Life expectancy by gender",
+    "subtitle": "The [period life expectancy](#dod:period-life-expectancy) at birth, in a given year.",
+    "citation": "UN, World Population Prospects (2024)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/female-and-male-life-expectancy-at-birth-in-years?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "World"
+    ]
+  },
+  "columns": {
+    "Life expectancy - Sex: male - Age: 0 - Variant: estimates": {
+      "titleShort": "Male life expectancy at birth",
+      "titleLong": "Male life expectancy at birth - UN WPP",
+      "descriptionShort": "Period life expectancy for male individuals at birth.",
+      "shortUnit": "years",
+      "unit": "years",
+      "timespan": "1950-2023",
+      "type": "Numeric",
+      "owidVariableId": 950948,
+      "shortName": "life_expectancy__sex_male__age_0__variant_estimates",
+      "lastUpdated": "2024-07-12",
+      "citationShort": "UN, World Population Prospects (2024) – processed by Our World in Data",
+      "citationLong": "UN, World Population Prospects (2024) – processed by Our World in Data. “Male life expectancy at birth – UN WPP” [dataset]. United Nations, “World Population Prospects”; United Nations, “World Population Prospects - Interim Update” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/950948.metadata.json"
+    },
+    "Life expectancy - Sex: female - Age: 0 - Variant: estimates": {
+      "titleShort": "Female life expectancy at birth",
+      "titleLong": "Female life expectancy at birth - UN WPP",
+      "descriptionShort": "Period life expectancy for female individuals at birth.",
+      "shortUnit": "years",
+      "unit": "years",
+      "timespan": "1950-2023",
+      "type": "Numeric",
+      "owidVariableId": 950938,
+      "shortName": "life_expectancy__sex_female__age_0__variant_estimates",
+      "lastUpdated": "2024-07-12",
+      "citationShort": "UN, World Population Prospects (2024) – processed by Our World in Data",
+      "citationLong": "UN, World Population Prospects (2024) – processed by Our World in Data. “Female life expectancy at birth – UN WPP” [dataset]. United Nations, “World Population Prospects”; United Nations, “World Population Prospects - Interim Update” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/950938.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-04-15",
+  "activeFilters": {}
+}
